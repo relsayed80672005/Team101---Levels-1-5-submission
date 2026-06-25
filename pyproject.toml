@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gradebook-from-hell"
+version = "0.1.0"
+description = "CS 490 software quality lab: an intentionally defective gradebook CLI."
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [
+  { name = "CS 490 Lab" }
+]
+dependencies = []
+
+[project.scripts]
+gradebook = "gradebook.cli:run"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+
+[tool.setuptools.packages.find]
+include = ["gradebook*"]

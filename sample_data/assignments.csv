@@ -1,0 +1,9 @@
+assignment_id,name,category,max_points,weight,due_date,drop_lowest_eligible,is_extra_credit,late_penalty_per_day,min_score_floor,grading_mode
+HW1,Homework 1,HOMEWORK,100,0.25,2026-09-10,false,false,0.10,,points
+HW2,Homework 2,HOMEWORK,100,0.25,2026-09-17,false,false,0.10,,points
+Q1,Quiz 1,QUIZ,20,0.15,2026-09-05,true,false,0.10,,points
+Q2,Quiz 2,QUIZ,20,0.15,2026-09-12,true,false,0.10,,points
+Q3,Quiz 3,QUIZ,20,0.15,2026-09-19,true,false,0.10,,points
+MID,Midterm,EXAM,100,0.20,2026-10-01,false,false,0.10,50,points
+PART,Participation,PARTICIPATION,10,0.00,,false,false,0.10,,passfail
+BONUS,Bonus Lab,EXTRA_CREDIT,5,0.00,2026-10-03,false,true,0.00,,points

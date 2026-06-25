@@ -1,0 +1,6 @@
+student_id,first_name,last_name,email,status,section
+S1001,Alice,Nguyen,alice@njit.edu,active,A
+S1002,Bob,Patel,bob@njit.edu,active,A
+S1003,Carla,Rivera,carla@njit.edu,inactive,B
+S1004,Derek,Young,derek@njit.edu,withdrawn,B
+S1005,Erin,Stone, erin@njit.edu ,active,A
