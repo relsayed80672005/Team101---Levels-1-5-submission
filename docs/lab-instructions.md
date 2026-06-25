@@ -6,6 +6,8 @@ This repository contains a Python command-line gradebook application with intent
 
 Your job is to treat the grading policy as the source of truth, write tests against that policy, expose defects, fix the code, and protect each fix with a test.
 
+You are not searching for bugs at random. Your primary task is to translate requirements into executable unit tests. Bugs are discovered as a consequence of testing the requirements.
+
 ## Source of truth
 
 Use [grading-policy.md](./grading-policy.md) as the authoritative requirements document.
@@ -20,6 +22,8 @@ You should:
 4. Run the tests and identify defects.
 5. Fix the implementation defects.
 6. Keep each fix protected by a regression test.
+
+Before fixing a defect, first write a test that demonstrates the defect.
 
 ## Levels
 
@@ -85,17 +89,21 @@ Focus on:
 Submit:
 
 - a working application
-- a passing `pytest` suite
-- tests tied to requirement IDs
-- a short summary of defects you fixed
+- a `pytest` suite covering the requirements you tested
+- tests named after requirement IDs where practical
+- a brief summary of the defects your team fixed
 
 ## Suggested workflow
 
 1. Start with one requirement group at a time.
-2. Name tests after requirement IDs, for example `test_core_02_letter_boundary`.
-3. Prefer small focused tests over large end-to-end tests.
-4. Fix one defect at a time.
-5. Re-run the relevant tests after each fix.
+2. Read one requirement.
+3. Write a test.
+4. Watch it fail or pass.
+5. Only then inspect the implementation.
+6. Name tests after requirement IDs, for example `test_core_02_letter_boundary`.
+7. Prefer small focused tests over large end-to-end tests.
+8. Fix one defect at a time.
+9. Re-run the relevant tests after each fix.
 
 ## Useful commands
 
